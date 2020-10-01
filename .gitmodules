@@ -1,0 +1,9 @@
+[submodule "djm-back"]
+	path = djm-back
+	url = https://github.com/antbht/djm-back.git
+[submodule "djm_sdk"]
+	path = djm_sdk
+	url = https://github.com/antbht/djm_sdk.git
+[submodule "djm_client"]
+	path = djm_client
+	url = https://github.com/antbht/djm_client
