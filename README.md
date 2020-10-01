@@ -18,6 +18,12 @@ Each project embeds its own README and scripts to facilitate its review.
 
 Let's see in next sections how to run the complete demo of the integrated three components.
 
+## Components project
+
+* Backend API : https://github.com/antbht/djm-back
+* Backend API SDK : https://github.com/antbht/djm-sdk
+* Client : https://github.com/antbht/djm-client 
+
 ## Prerequisites
 
 The project is made by using Python 3.8. Please ensure you have Python 3.8 installed on your workstation. You will also need the virtualenv Python package to ensure independancy of your Python projects. 
