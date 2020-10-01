@@ -1,28 +1,28 @@
 # Welcome to my Dejamobile Takehome Project
 
-This main repository should be the main entrypoint to discover the project. It defines the 3 other developed component as git submodules.
+This main repository should be the main entrypoint to discover the project. It defines the 3 others developed component as git submodules.
 
-It also embed a testing script which provide you a single entrypoint to run the complete demo of the project.
+It also embeds a testing script which provides you a single entrypoint to run the complete demo of the project.
 
 ## Project description
 
-To illustrate my programming skills, I developped three basic components of the described architecture. 
+To illustrate my programming skills, I developped three basic components of the dejamobile described architecture. 
 
 The first component is the backend API (djm-back). It has been developped in Python by using Falcon. It offers three API endpoint to get a list of a user's digitalized cards, to add a card to a user cards list and to delete a card. The complete description concerning the backend is available in the coresponding project repository. 
 
-The second component is the Backend API SDK. It has also been developped in Python. The aim of this component is to abstract the usage of the backend API and facilitate it. To reach the goals, the SDK is a Python package, which can be packaged independantly and used into a client. It offers the way to reach the three PAI endpoint and provides an abstraction of the API Model.
+The second component is the Backend API SDK. It has also been developped in Python. The aim of this component is to abstract the usage of the backend API and facilitate it. To reach the goals, the SDK is a Python package, which can be packaged independantly and used into a client. It offers the way to reach the three API endpoints and provides an abstraction of the API Model.
 
-Finally, the third component, is a client using the Backend API SDK. It has also been developped in Python and take the form as a command line interface. It is configured to manipulate the cards of the user represented by the ID=0302.
+Finally, the third component, is a client using the Backend API SDK. It has also been developped in Python and takes the form as a command line interface. It is configured to manipulate the cards of the user represented by the ID=0302.
 
-Each project embed is own README and script to facilitate its review.
+Each project embeds its own README and scripts to facilitate its review.
 
-Let's see in next section how to run the complete demo of the integrated three components.
+Let's see in next sections how to run the complete demo of the integrated three components.
 
 ## Prerequisites
 
-The project is made by using Python 3.8. Please ensure you have python 3.8 installed on your workstation. You will also need the virtualenv Python package to ensure independancy of your Python projects. 
+The project is made by using Python 3.8. Please ensure you have Python 3.8 installed on your workstation. You will also need the virtualenv Python package to ensure independancy of your Python projects. 
 
-All the provided scripts as been developped to be run on Unix workstation. 
+All the provided scripts as been developped to be run on a Unix workstation. 
 
 ## Get the project
 
@@ -32,7 +32,7 @@ Please clone this git repository and init submodules.
 cd /path/to/your/workspace
 mkdir antbht_takehome
 cd antbht_takehome
-git clone .
+git clone https://github.com/antbht/djm_takehome.git .
 git submodule update --init
 ```
 
@@ -40,10 +40,10 @@ git submodule update --init
 
 The complete demo is configured to start the project backend API on 127.0.0.1:8000 and run the client into the current terminal.
 
-To do that, it inits a Python virtualenv, installs the djm-back and the djm-client projects in the env. At the end, it starts in background the djm-back app, then the djm-client app.
+To do that, it initializes a Python virtualenv, installs the djm-back, the djm-sdk and the djm-client projects in the env. At the end, it starts in background the djm-back app, then the djm-client app.
 
-With the client you will be able to list your digitalized cards, add a card by giving its pan and finally delete a card by giving its uuid.
-A command help describes you the possibility of the app.
+By using the client, you will be able to list your digitalized cards, add a card by giving its pan and finally delete a card by giving its uuid.
+A command help describes to you the possibilities of the app.
 
 ## Scenario trace example
 
